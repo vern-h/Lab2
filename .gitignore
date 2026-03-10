@@ -1,0 +1,29 @@
+# Dependencies
+node_modules/
+frontend-app/node_modules/
+
+# Build outputs
+frontend-app/dist/
+backend/package/
+backend/lambda-deploy.zip
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+*.egg-info/
+
+# Env and secrets (keep .env.example)
+.env
+.env.local
+.env.production
+backend/.env
+
+# IDE and OS
+.DS_Store
+.idea/
+.vscode/
+
+# Logs
+*.log

@@ -1,0 +1,14 @@
+[
+  {
+    "Name": "Twitter stats streaming",
+    "ActionOnFailure": "CONTINUE",
+    "Type": "STREAMING",
+    "Args": [
+      "-files", "s3://YOUR_BUCKET/scripts/mapper.py,s3://YOUR_BUCKET/scripts/reducer.py",
+      "-mapper", "python3 mapper.py",
+      "-reducer", "python3 reducer.py",
+      "-input", "s3://YOUR_BUCKET/input/",
+      "-output", "s3://YOUR_BUCKET/output/"
+    ]
+  }
+]
